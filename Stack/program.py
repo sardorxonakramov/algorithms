@@ -13,7 +13,7 @@ class Stack:
             return self.data.pop()
 
     def IsEmpty(self):
-        return len(self.data)
+        return len(self.data) == 0
 
     def peek(self):
         return self.data[-1]
@@ -28,3 +28,6 @@ class Stack:
                 vovel.append(i)
         self.data = sorted(digit) + sorted(vovel)
         return self.data
+    
+    def size(self):
+        return len(self.data)
